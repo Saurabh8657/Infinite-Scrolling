@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scrolling Assignment</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            padding: 0px 50px 0px 50px ;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .card {
+            display: flex;
+            flex-direction: row;
+            width: auto;
+            background-color: #fff;
+            /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+            margin: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .card:hover {
+            cursor: pointer;
+        }
+        .card img {
+            width: 300px;
+            height: auto;
+            border-radius: 8px;
+        }
+        .card-body {
+            padding: 15px;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.217);
+        }
+        .title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-top: -10px;
+            /* margin-bottom: 5px; */
+        }
+        .body {
+            font-size: 1rem;
+            color: #555;
+        }
+        .loading {
+            font-size: 2rem;
+            color: red;
+            display: none;
+            position: fixed;
+            top: 95%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+    </style>
+  </head>
+  <body>
+        <div class="container">
+            <div class="card-list"></div>
+        </div>
+
+        <div class="loading">Loading...</div>
+
+        <script src="index.js"></script>
+  </body>
+</html>
